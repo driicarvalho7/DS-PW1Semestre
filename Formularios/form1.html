@@ -1,0 +1,137 @@
+<html>
+      <head><meta http-equiv="content-type" content="text/html; charset=utf-8">
+	  <title>Formulário - Animais </title>
+	  <script language="javascript" type="text/javascript">
+	  function aniva() {
+	  var dado = animal.dado.value;
+	  var dia = animal.dia.value;
+	  var mes = animal.mes.value;
+	  var ano = animal.ano.value;
+	  var ra = animal.ra.value;
+	 var cor = animal.cor.value;
+	  var nome = animal.nome.value;
+	  var end = animal.end.value;
+	  var ba = animal.ba.value;
+	  var cida = animal.cida.value;
+	  var est = animal.est.value;
+	  var email = animal.email.value;
+	  var tel = animal.tel.value;
+	  if(dado == ""){
+	  alert('por favor, preencha o campo Dado da animal!');
+	animal.dado.focus();
+	  return false;
+	  }
+	  if(dia == ""){
+	  alert('por favor, preencha o campo dia!');
+	animal.dia.focus();
+	  return false;
+	  }
+	  if(mes == ""){
+	  alert('por favor, preencha o campo mês!');
+	animal.mes.focus();
+	  return false;
+	  }
+	  if(ano == ""){
+	  alert('por favor, preencha o campo ano!');
+	animal.ano.focus();
+	  return false;
+	  }
+	  if(ra== ""){
+	  alert('por favor, preencha o campo raça!');
+	animal.ra.focus();
+	  return false;
+	  }
+	  if(cor == ""){
+	  alert('por favor, preencha o campo cor!');
+	animal.cor.focus();
+	  return false;
+	  }
+	 if(nome == ""){
+	  alert('por favor, preencha o campo nome!');
+	animal.nome.focus();
+	  return false;
+	  }
+	  if(end == ""){
+	  alert('por favor, preencha o campo endereço!');
+	animal.end.focus();
+	  return false;
+	  }
+	  if(ba == ""){
+	  alert('por favor, preencha o campo bairro!');
+	animal.ba.focus();
+     return false;	 
+	 }
+	  if(cida == ""){
+	  alert('por favor, preencha o campo cidadel!');
+	animal.cida.focus();
+	  return false;
+	  }
+	  if(est == ""){
+	  alert('por favor, preencha o campo estado!');
+	animal.est.focus();
+	  return false;
+	  }
+	  if(email == ""){
+	  alert('por favor, preencha o campo email!');
+	animal.email.focus();
+	 return false;
+	 }
+	  if(tel == ""){
+	  alert('por favor, preencha o campo telefone!');
+	animal.tel.focus();
+	 return false; 
+	  }
+}
+	  </script>
+	  </head>
+	  <body>
+	  <a href="../formularioind.html">voltar</a>
+	  <form name="animal" action="animal1.html" method="post">
+	  <table>
+	  <font face="Cooper Black">
+	  <tr><td><font face="Cooper Black">DADOS DO ANIMAL:</td><td><input type="type" name="dado" size="30" maxlength="25"></td>
+	  </tr>
+	  <tr><td><font face="Cooper Black">DATA DE NASCIMENTO:</td><td>Dia <input type="type" name="dia" size="1" maxlength="2"> Mês <input type="type" name="mes" size="1" maxlength="=2"> Ano <input type="type" name="ano" size="2" maxlength="4"></td>
+	  </tr>
+	  <tr><td><font face="Cooper Black">RAÇA:</td><td><input type="type" name="ra" size="14" maxlength="10"></td>
+	  </tr>
+	  <tr><td><font face="Cooper Black">SEXO:<input type="radio" name="se" value="Masculino" checked>M<input type="radio" name="se" value="Feminino" checked>F</td>
+	  </tr>
+	  <tr><td><font face="Cooper Black">COR:</td><td><input type="type" name="cor" size="15" maxlength="20"></td>
+	  </tr>
+	  <tr><td><font face="Cooper Black">Porte:<select name="Porte">
+	  <option>-
+	  <option>Grande
+	  <option>Médio
+	  <option>Pequeno
+	  <option>Mini
+	  </select>
+	  </td>
+	  </tr>
+	  </table>
+	  <br><br><br><br><table>
+	  <tr><td>DADOS DO PROPRIETÁRIO:</td>
+	  </tr>
+	  <tr><td>NOME:</td><td><input type="type" name="nome" size="40" maxlength="25"></td>
+	   </tr> 
+	   <tr><td>ENDEREÇO:</td><td><input type="type" name="end" size="40" maxlength="25"></td>
+		 </tr>
+		 <tr><td>BAIRRO:</td><td><input type="type" name="ba" size="40" maxlength="25"></td>
+		 </tr> 
+		 <tr><td>CIDADE:</td><td><input type="type" name="cida" size="40" maxlength="25"></td>
+	  </tr>
+	  <tr><td>ESTADO:</td><td><input type="type" name="est" size="40" maxlength="25"></td>
+	  </tr>
+	   <tr><td>EMAIL:</td><td><input type="type" name="email" size="40" maxlength="30"></td>
+	   </tr>
+	    <tr><td>TELEFONE:</td><td><input type="type" name="tel" size="40" maxlength="25"></td>
+		</tr>
+		</table>
+		<textarea cols="50" rows="16" name="comentario">Observações</textarea>
+		<br><input type="submit" value="Enviar" onclick="return aniva()"><input type="reset" value="Limpar">
+		<br><br><br><br><br><hr color="black"><br></center></h2>
+<h4><center>Desenvolvido por Adriano Carvalho - Todos direitos reservados</center></h4>
+		</form>
+	  </body>
+
+</html>

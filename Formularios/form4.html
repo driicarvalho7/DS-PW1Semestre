@@ -1,0 +1,124 @@
+<html>
+      <head><meta http-equiv="content-type" content="text/html; charset=utf-8">
+	  <title>Formulário - Automéveis </title>
+	  <script language="javascript" type="text/javascript">
+	  function mecav() {
+	  var dado = meca.dado.value;
+	  var ano = meca.ano.value;
+	  var model = meca.model.value;
+	 var cha = meca.cha.value;
+	  var cor = meca.cor.value;
+	  var nome = meca.nome.value;
+	  var end = meca.end.value;
+	  var ba = meca.ba.value;
+	  var cida = meca.cida.value;
+	  var est = meca.est.value;
+	  var email = meca.email.value;
+	  var tel = meca.tel.value;
+	  if(dado == ""){
+	  alert('por favor, preencha o campo Dado do veículo!');
+	meca.dado.focus();
+	  return false;
+	  }
+     if(ano == ""){
+	  alert('por favor, preencha o campo ano!');
+	meca.ano.focus();
+	  return false;
+	  }
+	  if(model== ""){
+	  alert('por favor, preencha o campo modelo!');
+	meca.model.focus();
+	  return false;
+	  }
+	  if(cha == ""){
+	  alert('por favor, preencha o campo chassi!');
+	meca.cha.focus();
+	  return false;
+	  }
+	 if(cor == ""){
+	  alert('por favor, preencha o campo cor!');
+	meca.cor.focus();
+	  return false;
+	    }
+	  if(nome == ""){
+	  alert('por favor, preencha o campo nome do proprietário!');
+	meca.nome.focus();
+	  return false;
+	  }
+	  if(end == ""){
+	  alert('por favor, preencha o campo endereço!');
+	meca.end.focus();
+	  return false;
+	  }
+	  if(ba == ""){
+	  alert('por favor, preencha o campo bairro!');
+	meca.ba.focus();
+     return false;	 
+	 }
+	  if(cida == ""){
+	  alert('por favor, preencha o campo cidadel!');
+	meca.cida.focus();
+	  return false;
+	  }
+	  if(est == ""){
+	  alert('por favor, preencha o campo estado!');
+	meca.est.focus();
+	  return false;
+	  }
+	  if(email == ""){
+	  alert('por favor, preencha o campo email!');
+	meca.email.focus();
+	 return false;
+	 }
+	  if(tel == ""){
+	  alert('por favor, preencha o campo telefone!');
+	meca.tel.focus();
+	 return false; 
+	  }
+}
+	  </script>
+	  </head>
+	  <body>
+	  <a href="../formularioind.html">voltar</a>
+	  <form name="meca" action="candi1.html" method="post">
+	  <table>
+	  <tr><td><font face="Cooper Black">DADOS DO VEÍCULO:</td><td><input type="type" name="dado" size="30" maxlength="25"></td>
+	  </tr>
+	  <tr><td><font face="Cooper Black">ANO DE FABRICAÇÃO:</td><td>Ano <input type="type" name="ano" size="2" maxlength="4"></td>
+	  </tr>
+	  <tr><td><font face="Cooper Black">MODELO:</td><td><input type="type" name="model" size="14" maxlength="10"></td>
+	  </tr>
+	  <tr><td><font face="Cooper Black">CHASSI:</td><td><input type="type" name="cha" size="15" maxlength="20"></td>
+	  </tr>
+	  <tr><td><font face="Cooper Black">COR:</td><td><input type="type" name="cor" size="15" maxlength="20"></td>
+	  </tr>
+	  <tr><td><font face="Cooper Black">PLACA:</td><td><input type="type" name="pla" size="15" maxlength="20"></td>
+	  </tr>
+	  </table>
+	  <br><br><br><br><table>
+	  <tr><td><font face="Cooper Black">DADOS DO PROPRIETÁRIO:</td>
+	  </tr>
+	  <tr><td><font face="Cooper Black">NOME:</td><td><input type="type" name="nome" size="40" maxlength="25"></td>
+	   </tr> 
+	   <tr><td><font face="Cooper Black">ENDEREÇO:</td><td><input type="type" name="end" size="40" maxlength="25"></td>
+		 </tr>
+		 <tr><td><font face="Cooper Black">BAIRRO:</td><td><input type="type" name="ba" size="40" maxlength="25"></td>
+		 </tr> 
+		 <tr><td><font face="Cooper Black">CIDADE:</td><td><input type="type" name="cida" size="40" maxlength="25"></td>
+	  </tr>
+	  <tr><td><font face="Cooper Black">ESTADO:</td><td><input type="type" name="est" size="40" maxlength="25"></td>
+	  </tr>
+	   <tr><td><font face="Cooper Black">EMAIL:</td><td><input type="type" name="email" size="40" maxlength="30"></td>
+	   </tr>
+	    <tr><td><font face="Cooper Black">TELEFONE:</td><td><input type="type" name="tel" size="40" maxlength="25"></td>
+		</tr>
+		</table>
+		<br><h5><font face="Cooper Black">SERVIÇOS A SER EXECUTADO: RELATAR AS AVARIAS DO VEÍCULO.</h5>
+		<textarea cols="50" rows="16" name="comentario"></textarea>
+		<br><input type="submit" value="Enviar" onclick="return mecav()"><input type="reset" value="Limpar">
+		<br><br><<br><br><br><hr color="black"><br></center></h2>
+<h4><center>Desenvolvido por Adriano Carvalho - Todos direitos reservados</center></h4>
+		</form>
+	  </body>
+
+</html>

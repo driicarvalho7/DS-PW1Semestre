@@ -1,0 +1,125 @@
+<html>
+      <head><meta http-equiv="content-type" content="text/html; charset=utf-8">
+	  <title>Formulário - Produto </title>
+	  <script language="javascript" type="text/javascript">
+	  function prod1() {
+	  var dado = prod.dado.value;
+	  var tama = prod.tama.value;
+	  var model = prod.model.value;
+	 var de = prod.de.value;
+	  var cor = prod.cor.value;
+	  var pre = prod.pre.value;
+	  var nome = prod.nome.value;
+	  var end = prod.end.value;
+	  var ba = prod.ba.value;
+	  var cida = prod.cida.value;
+	  var est = prod.est.value;
+	  var email = prod.email.value;
+	  var tel = prod.tel.value;
+	  if(dado == ""){
+	  alert('por favor, preencha o campo Dado do veículo!');
+	prod.dado.focus();
+	  return false;
+	  }
+	  if(model== ""){
+	  alert('por favor, preencha o campo modelo!');
+	prod.model.focus();
+	  return false;
+	  }
+	  if(de == ""){
+	  alert('por favor, preencha o campo detalhes!');
+	prod.de.focus();
+	  return false;
+	  }
+	 if(cor == ""){
+	  alert('por favor, preencha o campo cor!');
+	prod.cor.focus();
+	  return false;
+	    }
+	  if(pre == ""){
+	  alert('por favor, preencha o campo preço!');
+	prod.pre.focus();
+	  return false;
+	  }
+	   if(nome == ""){
+	  alert('por favor, preencha o campo nome do proprietário!');
+	prod.nome.focus();
+	  return false;
+	  }
+	  if(end == ""){
+	  alert('por favor, preencha o campo endereço!');
+	prod.end.focus();
+	  return false;
+	  }
+	  if(ba == ""){
+	  alert('por favor, preencha o campo bairro!');
+	prod.ba.focus();
+     return false;	 
+	 }
+	  if(cida == ""){
+	  alert('por favor, preencha o campo cidadel!');
+	prod.cida.focus();
+	  return false;
+	  }
+	  if(est == ""){
+	  alert('por favor, preencha o campo estado!');
+	prod.est.focus();
+	  return false;
+	  }
+	  if(email == ""){
+	  alert('por favor, preencha o campo email!');
+	prod.email.focus();
+	 return false;
+	 }
+	  if(tel == ""){
+	  alert('por favor, preencha o campo telefone!');
+	prod.tel.focus();
+	 return false; 
+	  }
+}
+	  </script>
+	  </head>
+	  <body>
+	  <a href="../formularioind.html">voltar</a>
+	  <form name="prod" action="candi2.html" method="post">
+	  <table>
+	  <tr><td><font face="Cooper Black">DADOS DO PRODUTO:</td><td><input type="type" name="dado" size="30" maxlength="25"></td>
+	  </tr>
+	  <tr><td><font face="Cooper Black">TAMANHO</td><td> P <input type="checkbox" name="tama" value ="P"> M <input type="checkbox" name="prod2" value ="M"> G <input type="checkbox" name="prod3" value ="G"> GG <input type="checkbox" name="prod4" value ="GG"></td> 
+	  </tr>
+	  <tr><td><font face="Cooper Black">MODELO:</td><td><input type="type" name="model" size="14" maxlength="10"></td>
+	  </tr>
+	  <tr><td><font face="Cooper Black">DETALHES:</td><td><input type="type" name="de" size="15" maxlength="20"></td>
+	  </tr>
+	  <tr><td><font face="Cooper Black">COR:</td><td><input type="type" name="cor" size="15" maxlength="20"></td>
+	  </tr>
+	  <tr><td><font face="Cooper Black">PREÇO:</td><td><input type="type" name="pre" size="15" maxlength="20"></td>
+	  </tr>
+	  </table>
+	  <br><br><br><br><table>
+	  <tr><td><font face="Cooper Black">DADOS DO PROPRIETÁRIO:</td>
+	  </tr>
+	  <tr><td><font face="Cooper Black">NOME:</td><td><input type="type" name="nome" size="40" maxlength="25"></td>
+	   </tr> 
+	   <tr><td><font face="Cooper Black">ENDEREÇO:</td><td><input type="type" name="end" size="40" maxlength="25"></td>
+		 </tr>
+		 <tr><td><font face="Cooper Black">BAIRRO:</td><td><input type="type" name="ba" size="40" maxlength="25"></td>
+		 </tr> 
+		 <tr><td><font face="Cooper Black">CIDADE:</td><td><input type="type" name="cida" size="40" maxlength="25"></td>
+	  </tr>
+	  <tr><td><font face="Cooper Black">ESTADO:</td><td><input type="type" name="est" size="40" maxlength="25"></td>
+	  </tr>
+	   <tr><td><font face="Cooper Black">EMAIL:</td><td><input type="type" name="email" size="40" maxlength="30"></td>
+	   </tr>
+	    <tr><td><font face="Cooper Black">TELEFONE:</td><td><input type="type" name="tel" size="40" maxlength="25"></td>
+		</tr>
+		</table>
+
+		<textarea cols="50" rows="16" name="comentario">OBSERVAÇÕES</textarea>
+		<br><input type="submit" value="Enviar" onclick="return prod1()"><input type="reset" value="Limpar">
+		<br><br><br><br><br><br><hr color="black"><br></center></h2>
+<h4><center>Desenvolvido por Adriano Carvalho - Todos direitos reservados</center></h4>
+		</form>
+	  </body>
+
+</html>
