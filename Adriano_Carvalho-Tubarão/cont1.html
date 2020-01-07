@@ -1,0 +1,71 @@
+<html>
+  <head>
+	<title>Contato</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	 <script language="javascript" type="text/javascript">
+	  function validar8(){
+			var nome = anima.nome.value;
+			var cel=anima.cel.value;
+			var email=anima.email.value;
+			
+				if(nome == ""){
+					alert('Por favor, preencha o campo NOME!!');
+					anima.nome.focus();
+					return false;}
+					
+				if(cel==""){
+					alert('Por favor, preencha o campo CELULAR!!');
+					anima.cel.focus();
+					return false;}
+					
+				if(email==""){
+					alert('Por favor, preencha o campo EMAIL!!');
+					anima.email.focus();
+					return false;}
+					}
+	 </script>
+	</head>
+	<body>
+	<a href="index.html"> <font face="Cooper Black" color="Black"> voltar </a>
+	<center> 
+	 <br><br><br>
+	 <h1> Envie sua duvida ou sugestões para nós! </h1>
+	 <br><br>
+	 <form name="anima" action="act.html" method="post">
+	 <table border cellspacing="2" cellpadding="10" cols="1" width="30%">
+		<tr>
+		<td> <center> <input type="text" name="nome" size="40" placeholder=" Nome"></center></td>
+		</tr>
+		<tr>
+		<td> <center> <input type="text" name="cel" size="40" placeholder=" Celular"></center></td>
+		</tr>
+		<tr>
+		<td> <center> <input type="text" name="email" size="40" placeholder=" Email"></center></td>
+		</tr> 
+		<tr>
+		<td> <center> <b> Avalie nosso site!  <select name="Avaliação">
+					<option>   
+					<option> Muito bom
+					<option> Boa
+					<option> Regular
+					<option> Ruim
+					</select>
+		</tr>
+		<tr>
+		<td> <center> <textarea cols="70" rows="10" name="comentario" placeholder=" Deixe o seu comentario!"> </textarea>
+		</tr>
+		<tr>
+		<td> <center> <input type="submit" value="ENVIAR" onclick="return validar8()"> 
+		<input type="reset" value="LIMPAR"></center></td>
+		</tr>
+		</font> 
+		
+	</table>
+		</form>
+		</font>
+	<br><br><br><br><br><br>
+
+		<hr> <b> Desenvolvido por: Adriano Carvalho - Todos direitos reservados 
+		
+	</body>
+	</html> 
